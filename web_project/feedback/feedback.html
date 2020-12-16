@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8"/>
         <title>
-            Регистрация
+            Обратная связь
         </title>
+        <link rel="stylesheet" href="../css/style_01.css">
     </head>
     <body>
     <menu type="toolbar">
@@ -47,13 +48,15 @@
             <input checked name="gender" type="radio"/>
             <br/>
             <h3>Купленные товары</h3>
-            AMD Radeon R5M240G8 SATA III
-            <input  name="interest" type="checkbox"/>
-            <br/>
-            AMD Radeon R5MP240G8 PCI-E
-            <input name="interest" type="checkbox"/>
-            <br/>
+            <select  miltiple>
+                <option>AMD Radeon R5M240G8 SATA III</option>
+                <option>AMD Radeon R5MP240G8 PCI-E</option>
+            </select><br>
             
+            <label><br>
+            <b>Текст сообщения</b><br>
+            <textarea class="message" placeholder="Тут можно написать сообщение"></textarea>
+            </label><br>
             <input type="submit" value="Отправить данные"/>
             <input type="reset" value="Отмена"/>
         </form>
@@ -61,9 +64,7 @@
         Информация о товаре и изображение товара взяты для учебных целей с сайта :
         <br/>
         <a href="https://www.citilink.ru/" target="_blank">
-            <b>
                 https://www.citilink.ru/
-            </b>
         </a>
         <b>
             Все права защищены ©

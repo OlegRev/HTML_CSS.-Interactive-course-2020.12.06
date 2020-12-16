@@ -1,0 +1,66 @@
+body {
+    background: #f8f8f8;
+}
+menu a, .menu {
+    color: darkred;
+    font-size: 1.5em;
+    font-style: italic;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.short_descriptions {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.descriptions {    
+    color: #484343;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;  
+}
+
+.characteristics {
+    color: #000;
+    font-size:22px;
+    font-style: oblique;
+    font-weight: 666;
+    line-height: 26px;
+    text-align: centr; 
+    list-style-image: url("../imgs/marker.png");
+}
+
+.message{
+    box-sizing: border-box;
+    height: 240px;
+    width: 66%;
+    color: #000;
+    font-size:22px;
+    font-style: italic;
+}
+iframe {
+    width: 66%;
+    height: 480px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img[alt="SSD_AMD"] {
+    padding: 7px;
+    background: #cd572f;
+    height: 500px;
+}
