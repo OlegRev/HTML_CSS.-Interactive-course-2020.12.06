@@ -5,69 +5,111 @@
         <title>
             Обратная связь
         </title>
-        <link rel="stylesheet" href="../css/style_01.css">
+        <link href="../css/style_01.css" rel="stylesheet"/>
     </head>
     <body>
-    <menu type="toolbar">
-            <button type="button">
-                <a href="index.html">
-                    Главная
-                </a>
-            </button>
-            <button type="button">
-                <a href="catalog.html">
-                    Каталог
-                </a>
-            </button>
-            <button type="button">
-                <a href="contacts.html">
-                    Контакты
-                </a>
-            </button>
-            <button type="button">
-                <a href="registration.html">
-                    Регистрация
-                </a>
-            </button>
-        </menu><hr>
+        <header>
+            <img class="logo" src="../logo/logo_h2_44x45.png"/>
+            <nav>
+                <button type="button">
+                    <a href="../index.html">
+                        Главная
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="../catalog.html">
+                        Каталог
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="../contacts.html">
+                        Контакты
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="../registration.html">
+                        Регистрация
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="feedback.html">
+                        Обратная связь
+                    </a>
+                </button>
+            </nav>
+            <hr/>
+        </header>
         <h1>
             Обратная связь
         </h1>
         <form action="#">
-            Ваше имя
-            <input placeholder="Ваше имя" type="text"/>
+            <label>
+                Имя
+            </label>
             <br/>
-            <h3>Ваш пол</h3>
-            M
+            <input class="name" placeholder="Ваше имя" type="text"/>
+            <br/>
+            <label>
+                Фамилия
+            </label>
+            <br/>
+            <input class="surname" placeholder="Ваша фамилия" type="text"/>
+            <br/>
+            <label>
+                E-mail
+            </label>
+            <br/>
+            <input class="email" placeholder="example@example.example" type="text"/>
+            <br/>
+            <label>
+                Пол
+            </label>
+            <br/>
+            Mужчина
             <input name="gender" type="radio"/>
-            <br/>
-            Ж
+            Женьщина
             <input name="gender" type="radio"/>
             <br/>
             Не выбирать
-            <input checked name="gender" type="radio"/>
+            <input checked="" name="gender" type="radio"/>
             <br/>
-            <h3>Купленные товары</h3>
-            <select  miltiple>
-                <option>AMD Radeon R5M240G8 SATA III</option>
-                <option>AMD Radeon R5MP240G8 PCI-E</option>
-            </select><br>
-            
-            <label><br>
-            <b>Текст сообщения</b><br>
-            <textarea class="message" placeholder="Тут можно написать сообщение"></textarea>
-            </label><br>
-            <input type="submit" value="Отправить данные"/>
-            <input type="reset" value="Отмена"/>
+            <label>
+                Купленные товары
+            </label>
+            <select miltiple="">
+                <option>
+                    AMD Radeon R5M240G8 SATA III
+                </option>
+                <option>
+                    AMD Radeon R5MP240G8 PCI-E
+                </option>
+            </select>
+            <br>
+                <label>
+                    <br/>
+                    <b>
+                        Текст сообщения
+                    </b>
+                    <br/>
+                    <textarea class="message" placeholder="Тут можно написать сообщение"></textarea>
+                </label>
+                <br/>
+                <input type="submit" value="Отправить данные"/>
+                <input type="reset" value="Отмена"/>
+            </br>
         </form>
-        <hr/>
-        Информация о товаре и изображение товара взяты для учебных целей с сайта :
-        <br/>
-        <a href="https://www.citilink.ru/" target="_blank">
-                https://www.citilink.ru/
-        </a>
-        <b>
-            Все права защищены ©
-        </b>
+        <footer>
+            <hr/>
+            Информация о товаре и изображение товара взяты для учебных целей с сайта :
+            <br/>
+            <a href="https://www.citilink.ru/" target="_blank">
+                <b>
+                    https://www.citilink.ru/
+                </b>
+            </a>
+            <b>
+                Все права защищены ©
+            </b>
+        </footer>
     </body>
 </html>

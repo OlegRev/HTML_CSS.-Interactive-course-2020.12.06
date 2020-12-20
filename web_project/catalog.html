@@ -2,58 +2,53 @@
 <html lang="">
     <head>
         <meta charset="utf-8"/>
-        <title>Каталог товаров
+        <title>
+            Каталог товаров
         </title>
-        <link rel="stylesheet" href="css/style_01.css">
+        <link href="css/style_01.css" rel="stylesheet"/>
     </head>
     <body>
-        
-        <menu type="toolbar">
-            <button type="button">
-                <a href="index.html">
-                    Главная
-                </a>
-            </button>
-            <button type="button">
-                <a href="catalog.html">
-                    Каталог
-                </a>
-            </button>
-            <button type="button">
-                <a href="contacts.html">
-                    Контакты
-                </a>
-            </button>
-            <button type="button">
-                <a href="registration.html">
-                    Регистрация
-                </a>
-            </button>
-        </menu><hr>
-        <ul class="menu">
-            <li>
-                <a href="index.html">
-                    Главная
-                </a>
-            </li>
-            <li>
-                <a href="catalog.html">
-                    Каталог
-                </a>
-            </li>
-            <li>
-                <a href="registration.html">
-                    Регистрация
-                </a>
-            </li>
-        </ul>
+        <header>
+            <img class="logo" src="logo/logo_h2_44x45.png"/>
+            <nav>
+                <button type="button">
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="catalog.html">
+                        Каталог
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="contacts.html">
+                        Контакты
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="registration.html">
+                        Регистрация
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="feedback/feedback.html">
+                        Обратная связь
+                    </a>
+                </button>
+            </nav>
+            <hr/>
+        </header>
         <h1>
             Каталог товаров
         </h1>
-        <ul>
+        <ul class="goods">
             <li>
-            <a href="imgs/AMD_R5MP240G8.jpg" target="_blank"><img src="small_img//AMD_R5MP240G8_68x90.png"></a>
-                <br><a href="catalog/AMD_R5MP240G8.html">
+                <a href="imgs/AMD_R5MP240G8.jpg" target="_blank">
+                    <img class="ssd_amd_small" src="small_img//AMD_R5MP240G8_68x90.png"/>
+                </a>
+                <br/>
+                <a href="catalog/AMD_R5MP240G8.html">
                     SSD накопитель AMD Radeon R5MP240G8 240ГБ, M.2 2280, PCI-E
                 </a>
                 <br/>
@@ -64,8 +59,11 @@
                 </a>
             </li>
             <li>
-                <a href="imgs/AMD_R5M240G8.jpg" target="_blank"><img src="small_img//AMD_R5M240G8_68x90.png"></a>
-                <br><a href="catalog/AMD_R5M240G8.html">
+                <a href="imgs/AMD_R5M240G8.jpg" target="_blank">
+                    <img class="ssd_amd_small" src="small_img//AMD_R5M240G8_68x90.png"/>
+                </a>
+                <br/>
+                <a href="catalog/AMD_R5M240G8.html">
                     SSD накопитель AMD Radeon R5M240G8 240ГБ, M.2 2280, SATA III
                 </a>
                 <br/>
@@ -76,9 +74,10 @@
                 </a>
             </li>
         </ul>
-        <hr/>
-        Информация о товаре и изображение товара взяты для учебных целей с сайта :
-        <br>
+        <footer>
+            <hr/>
+            Информация о товаре и изображение товара взяты для учебных целей с сайта :
+            <br/>
             <a href="https://www.citilink.ru/" target="_blank">
                 <b>
                     https://www.citilink.ru/
@@ -87,6 +86,6 @@
             <b>
                 Все права защищены ©
             </b>
-        </br>
+        </footer>
     </body>
 </html>

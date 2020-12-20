@@ -1,13 +1,25 @@
 body {
     background: #f8f8f8;
 }
-menu a, .menu {
+
+nav a{
     color: darkred;
     font-size: 1.5em;
     font-style: italic;
     list-style-type: none;
     text-decoration: none;
-    
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+nav a:active {
+    color: violet;
+}
+
+button{
+    border-radius: 25px 0px 25px;
 }
 
 h3 {
@@ -37,19 +49,20 @@ h3 {
     font-size:22px;
     font-style: oblique;
     font-weight: 666;
-    line-height: 26px;
+    line-height: 28px;
     text-align: centr; 
-    list-style-image: url("../imgs/marker.png");
 }
 
 .message{
     box-sizing: border-box;
-    height: 240px;
-    width: 66%;
+    height: 250px;
+    width: 500px;
     color: #000;
-    font-size:22px;
+    font-size:26px;
     font-style: italic;
+    text-transform: capitalize;
 }
+
 iframe {
     width: 66%;
     height: 480px;
@@ -63,4 +76,83 @@ img[alt="SSD_AMD"] {
     padding: 7px;
     background: #cd572f;
     height: 500px;
+}
+
+img[alt="SSD_AMD"]:hover {
+    background: none;
+}
+
+.goods {
+    font-size:18px;
+    list-style-image: url("../imgs/marker.png");
+}
+
+.ssd_amd_small {
+    padding: 3px;
+    background: #cd572f;
+}
+
+.name,
+.surname,
+input[type="password"]{
+    height: 24px;
+    width: 160px;
+    font-size:16px;
+    font-style: italic;
+}
+
+select {
+    height: 34px;
+    width: 385px;
+    font-size:16px;
+    font-style: italic;
+}
+
+.short_descriptions:first-letter,
+.descriptions:first-letter,
+.notes:first-letter,
+.project:first-letter{
+    font-size:33px;
+    color:darkred;
+}
+
+.characteristics{
+    border: 5px solid #000;
+    height: 100px;
+    width: 800px;
+    border-collapse: collapse;
+}
+
+.characteristics td {
+    border: 3px solid darkred;
+    padding-left: 6px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.characteristics tr:nth-child(1){
+    border: 5px solid #000;
+    height: 50px;
+    background-color: #cd572f;
+}
+
+.logo {
+    float:left; 
+}
+
+.email {
+    height: 24px;
+    width: 260px;
+    font-size:16px;
+    font-style: italic;
+}
+
+.email:focus {
+	color: darkred;
+	background-color: blueviolet;
+}
+
+.name,
+.surname{
+	text-transform: capitalize;
 }

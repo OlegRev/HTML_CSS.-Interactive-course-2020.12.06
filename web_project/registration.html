@@ -5,70 +5,73 @@
         <title>
             Регистрация
         </title>
-        <link rel="stylesheet" href="css/style_01.css">
+        <link href="css/style_01.css" rel="stylesheet"/>
     </head>
     <body>
-    <menu type="toolbar">
-            <button type="button">
-                <a href="index.html">
-                    Главная
-                </a>
-            </button>
-            <button type="button">
-                <a href="catalog.html">
-                    Каталог
-                </a>
-            </button>
-            <button type="button">
-                <a href="contacts.html">
-                    Контакты
-                </a>
-            </button>
-            <button type="button">
-                <a href="registration.html">
-                    Регистрация
-                </a>
-            </button>
-        </menu>
-        <ul class="menu">
-            <li>
-                <a href="index.html">
-                    Главная
-                </a>
-            </li>
-            <li>
-                <a href="catalog.html">
-                    Каталог
-                </a>
-            </li>
-            <li>
-                <a href="registration.html">
-                    Регистрация
-                </a>
-            </li>
-        </ul><hr>
+        <header>
+            <img class="logo" src="logo/logo_h2_44x45.png"/>
+            <nav>
+                <button type="button">
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="catalog.html">
+                        Каталог
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="contacts.html">
+                        Контакты
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="registration.html">
+                        Регистрация
+                    </a>
+                </button>
+                <button type="button">
+                    <a href="feedback/feedback.html">
+                        Обратная связь
+                    </a>
+                </button>
+            </nav>
+            <hr/>
+        </header>
         <h1>
             Регистрация
         </h1>
         <form action="#">
-            Ваше имя
-            <input placeholder="Ваше имя" type="text"/>
+            <label>
+                Имя:
+            </label>
+            <input class="name" placeholder="Ваше имя" type="text"/>
+            <label>
+                Фамилия:
+            </label>
+            <input class="surname" placeholder="Ваша фамилия" type="text"/>
+            <label>
+                E-mail:
+            </label>
+            <input class="email" placeholder="example@example.example" type="text"/>
             <br/>
-            Пароль
+            Логин:
+            <input class="name" placeholder="Логин" type="text"/>
+            Пароль:
             <input placeholder="Пароль" type="password"/>
             <br/>
-            Ваш пол
-            <br/>
-            M
+            Ваш пол: M
             <input name="gender" type="radio"/>
-            <br/>
             Ж
             <input name="gender" type="radio"/>
-            <br/>
             Не выбирать
             <input checked="" name="gender" type="radio"/>
             <br/>
-            Ваши увлечения
+            <br/>
+            <label>
+                Ваши увлечения
+            </label>
             <br/>
             Спорт
             <input checked="" name="interest" type="checkbox"/>
@@ -85,16 +88,18 @@
             <input type="submit" value="Отправить данные"/>
             <input type="reset" value="Отмена"/>
         </form>
-        <hr/>
-        Информация о товаре и изображение товара взяты для учебных целей с сайта :
-        <br/>
-        <a href="https://www.citilink.ru/" target="_blank">
+        <footer>
+            <hr/>
+            Информация о товаре и изображение товара взяты для учебных целей с сайта :
+            <br/>
+            <a href="https://www.citilink.ru/" target="_blank">
+                <b>
+                    https://www.citilink.ru/
+                </b>
+            </a>
             <b>
-                https://www.citilink.ru/
+                Все права защищены ©
             </b>
-        </a>
-        <b>
-            Все права защищены ©
-        </b>
+        </footer>
     </body>
 </html>
