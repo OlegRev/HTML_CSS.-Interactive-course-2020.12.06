@@ -42,56 +42,58 @@
         <h1>
             Контакты
         </h1>
-        <label>
-            Имя
-        </label>
-        <input class="name" placeholder="Ваше имя" type="text"/>
-        <label>
-            Фамилия
-        </label>
-        <input class="surname" placeholder="Ваша фамилия" type="text"/>
-        <label>
-            E-mail
-        </label>
-        <input class="email" placeholder="example@example.example" type="text"/>
-        <br/>
-        <label>
-            Пол
-        </label>
-        <br/>
-        Mужчина
-        <input name="gender" type="radio"/>
-        Женьщина
-        <input name="gender" type="radio"/>
-        Не выбирать
-        <input checked="" name="gender" type="radio"/>
-        <br/>
-        <label>
-            Тема сообщения
-        </label>
-        <select required="">
-            <option>
-                Отзыв
-            </option>
-            <option>
-                Вопрос
-            </option>
-            <option>
-                Жалоба
-            </option>
-        </select>
-        <br/>
-        <label>
+        <form action="#">
+            <label>
+                Имя
+            </label>
+            <input class="name" placeholder="Ваше имя" type="text"/>
+            <label>
+                Фамилия
+            </label>
+            <input class="surname" placeholder="Ваша фамилия" type="text"/>
+            <label>
+                E-mail
+            </label>
+            <input class="email" placeholder="example@example.example" type="text"/>
             <br/>
-            <b>
-                Текст сообщения
-            </b>
+            <label>
+                Пол
+            </label>
             <br/>
-            <textarea class="message" placeholder="Напишите нам"></textarea>
-        </label>
-        <br/>
-        <input type="submit" value="Отправить данные"/>
-        <input type="reset" value="Отмена"/>
+            Mужчина
+            <input name="gender" type="radio"/>
+            Женьщина
+            <input name="gender" type="radio"/>
+            Не выбирать
+            <input checked="" name="gender" type="radio"/>
+            <br/>
+            <label>
+                Тема сообщения
+            </label>
+            <select required="">
+                <option>
+                    Отзыв
+                </option>
+                <option>
+                    Вопрос
+                </option>
+                <option>
+                    Жалоба
+                </option>
+            </select>
+            <br/>
+            <label>
+                <br/>
+                <b>
+                    Текст сообщения
+                </b>
+                <br/>
+                <textarea class="message" placeholder="Напишите нам"></textarea>
+            </label>
+            <br/>
+            <input type="submit" value="Отправить данные"/>
+            <input type="reset" value="Отмена"/>
+        </form>
         <br/>
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yEcL5t1vKFEJYabqnRMzBUnonrGIxvJ_">
         </iframe>
