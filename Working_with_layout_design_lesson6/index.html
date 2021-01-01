@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> </head>
 
 <body>
     <div class="container">
-        <div class="first_screen">
+        <div class="first_screen" id="home">
             <header class="header">
                 <section class=logo_section>
                     <a href="#" class=logo_link>
@@ -28,13 +31,13 @@
             </header>
             <nav class="menu">
                 <ul>
-                    <li class="menu-list"><a href="" class="menu-link menu-link-active">Home</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">About</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">Services</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">Gallery</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">News</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">Team</a></li>
-                    <li class="menu-list"><a href="" class="menu-link">Contact Us</a></li>
+                    <li class="menu-list"><a href="#home" class="menu-link menu-link-active">Home</a></li>
+                    <li class="menu-list"><a href="#about_us" class="menu-link">About</a></li>
+                    <li class="menu-list"><a href="#about_us" class="menu-link">Services</a></li>
+                    <li class="menu-list"><a href="#our_gallery" class="menu-link">Gallery</a></li>
+                    <li class="menu-list"><a href="#news_and_events" class="menu-link">News</a></li>
+                    <li class="menu-list"><a href="#our_team" class="menu-link">Team</a></li>
+                    <li class="menu-list"><a href="#contact_us" class="menu-link">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="first_screen_text">
@@ -47,83 +50,106 @@
                 <li class="vk"><img src="imgs/first_screen/vk-social-network-logo.png" alt="vk"></li>
             </ul>
         </div>
-        <div class="about_us"> <img src="imgs/About_Us/about_us.png" alt="about_us">
+        <div class="about_us" id="about_us"> <img src="imgs/About_Us/about_us.png" alt="about_us">
             <h2>About Us!</h2>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
             <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
-        <div class="services">
+        <div class="services" id="services">
             <h2 class="services_h2">Services</h2>
-            <nav class="services_menu">
-                <ul class="services_menu_left">
-                    <li>Repreh Qui In Ea Voluptate
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <nav class="services_menu_block">
+                <ul class="services_menu services_menu_left">
+                    <li>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_left_h3">Repreh Qui In Ea Voluptate</h3>
+                            <p class="services_menu_p services_menu_p_left">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
+                        <div class="img_block img_block_left"><img src="imgs/Services/branch.png" alt=""></div>
                     </li>
-                    <li>Aut Perferendis Doloribus
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    <li>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_left_h3">Aut Perferendis Doloribus</h3>
+                            <p class="services_menu_p services_menu_p_left">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
+                        <div class="img_block img_block_left"><img src="imgs/Services/$.png" alt=""></div>
                     </li>
-                    <li>Maiores Alias Consequaturс
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    <li>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_left_h3">Maiores Alias Consequaturс</h3>
+                            <p class="services_menu_p services_menu_p_left">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
+                        <div class="img_block img_block_left"><img src="imgs/Services/poll.png" alt=""></div>
                     </li>
                 </ul>
-                <ul class="services_menu_right">
-                    <li>Voluptatibus Maiores Aliasс
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <ul class="services_menu services_menu_right">
+                    <li>
+                        <div class="img_block img_block_right"><img src="imgs/Services/arrow-up-bold-circle-outline.png" alt=""></div>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_right_h3">Voluptatibus Maiores Aliasс</h3>
+                            <p class="services_menu_p services_menu_p_right">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
                     </li>
-                    <li>Dut Aut Reiciendis Maiores
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    <li>
+                        <div class="img_block img_block_right"><img src="imgs/Services/home.png" alt=""></div>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_right_h3">Dut Aut Reiciendis Maiores</h3>
+                            <p class="services_menu_p services_menu_p_right">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
                     </li>
-                    <li>Doloribus Volupta Maiores
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    <li>
+                        <div class="img_block img_block_right"><img src="imgs/Services/settings.png" alt=""></div>
+                        <div class="services_menu_info_item">
+                            <h3 class="services_menu_h3 services_menu_right_h3">Doloribus Volupta Maiores</h3>
+                            <p class="services_menu_p services_menu_p_right">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="our_gallery">
+        <div class="our_gallery" id="our_gallery">
             <h2 class="gallery_h2">Our Gallery</h2>
             <section class="gallery">
                 <figure class="gallery_figure"><img src="imgs/Our_Gallery/Assasins_Creed_Rogue.png" alt="">
                     <figcaption class="gallery_figcaption">
                         <p class="gallery_first_p">Assasin’s Creed:</p>
                         <p class="gallery_second_p">Rogue</p>
-                        <button class="gallery_button">Buy</button>
+                        <button type="submit" name="Buy" class="gallery_button">Buy</button>
                     </figcaption>
                 </figure>
                 <figure class="gallery_figure"><img src="imgs/Our_Gallery/Tomb_Raider.png" alt="">
                     <figcaption class="gallery_figcaption">
                         <p class="gallery_first_p">Tomb Raider</p>
-                        <button class="gallery_button">Buy</button>
+                        <button type="submit" name="Buy" class="gallery_button">Buy</button>
                     </figcaption>
                 </figure>
                 <figure class="gallery_figure"><img src="imgs/Our_Gallery/Ryse_Son_Of_Rome.png" alt="">
                     <figcaption class="gallery_figcaption">
                         <p class="gallery_first_p">Ryse:</p>
                         <p class="gallery_second_p">Son Of Rome</p>
-                        <button class="gallery_button">Buy</button>
+                        <button type="submit" name="Buy" class="gallery_button">Buy</button>
                     </figcaption>
                 </figure>
                 <figure class="gallery_figure"><img src="imgs/Our_Gallery/World_Of_Warcraft__Wrath_Of_The_Linch_King.png" alt="">
                     <figcaption class="gallery_figcaption">
                         <p class="gallery_first_p">World Of Warcraft:</p>
                         <p class="gallery_second_p">Wrath Of The Linch King</p>
-                        <button class="gallery_button">Buy</button>
+                        <button type="submit" name="Buy" class="gallery_button">Buy</button>
                     </figcaption>
                 </figure>
             </section>
         </div>
-        <div class="testimonial">
+        <div class="testimonial" id="testimonial">
             <h2 class="testimonial_h2">Testimonial</h2> <img class="testimonial_img" src="imgs/Testimonial/testimonial_icon.png" alt="">
             <form action="#">
-                <button class="testimonial_button testimonial_button_previous">
-                    < </button>
-                        <button class="testimonial_button testimonial_button_next">></button>
+                <a href="" class="testimonial_button testimonial_button_previous">
+                    <</a><a href="" class="testimonial_button testimonial_button_next">></a>
                         <section class="testimonial_slider_text">
                             <p class="testimonial_p">Donec feugiat tellus sem, laoreet iaculis orci lobortis vel. Sed sed luctus orci, at lacinia risus. Ut porttitor ante ac tincidunt elementum. Curabitur ex dolor, condimentum vitae nunc vel, pulvinar semper justo. Vestibulum et aliquet magna, maximus dapibus enim. Vestibulum ex lectus, posuere eu viverra at, mattis et enim. Nam efficitur sem et lectus fringilla, at pharetra nulla luctus. Nunc cursus, augue ac ultricies volutpat, neque erat congue justo, ac pretium tellus eros a neque. Integer ipsum sem, consectetur a mollis ac, cursus eu ipsum.</p>
                             <p class="testimonial_by_line"><b>JOHN SMITH</b> - FOUNDER</p>
                         </section>
             </form>
         </div>
-        <div class="news_and_events">
+        <div class="news_and_events" id="news_and_events">
             <h2 class="news_and_events_h2">News & Events</h2>
             <div class="latest_news_calendar">
                 <h2 class="latest_news_h2">Latest News</h2>
@@ -167,19 +193,50 @@
                 <div class="header_featured_events">
                     <h2 class="featured_events_h2">Featured Events</h2>
                     <div class="fe_pagination">
-                        <button class="fe_button fe_previous">&#60</button<button class="fe_button fe_next">&#62</button>
-                    </div>
+                        <a href="" class="fe_button fe_previous">
+                            <</a> <a href="" class="fe_button fe_next">></a> </div>
                 </div>
-                <figure class="featured_events_imgs"> <img src="imgs/News_&_Events/g3.png" alt="" class="img_item1"><img src="imgs/News_&_Events/g7.png" alt="" class="img_item2"><img src="imgs/News_&_Events/g9.png" alt="" class="img_item3"> </figure>
-                <ul class="featured_events_list" type="context">
-                    <li class="featured_events_list_item">Assumenda Est Cliche Reprehenderit</li>
-                    <li class="featured_events_list_item">Assumenda Est Cliche Reprehenderit</li>
-                    <li class="featured_events_list_item">Assumenda Est Cliche Reprehenderit</li>
-                    <li class="featured_events_list_item">Assumenda Est Cliche Reprehenderit</li>
+                <figure class="featured_events_imgs"> <img src="imgs/News_&_Events/g7.png" alt="" class="img_item1"><img src="imgs/News_&_Events/g9.png" alt="" class="img_item2"><img src="imgs/News_&_Events/g3.png" alt="" class="img_item3"> </figure>
+                <ul class="featured_events_list">
+                    <li class="featured_events_list_item">
+                        <div class="featured_events_info">
+                            <h4>Assumenda Est Cliche Reprehenderit</h4>
+                            <div class="featured_events_p">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="featured_events_list_item">
+                        <div class="featured_events_info">
+                            <h4>Assumenda Est Cliche Reprehenderit</h4>
+                            <div class="featured_events_p">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="featured_events_list_item">
+                        <div class="featured_events_info">
+                            <h4>Assumenda Est Cliche Reprehenderit</h4>
+                            <div class="featured_events_p">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="featured_events_list_item">
+                        <div class="featured_events_info">
+                            <h4>Assumenda Est Cliche Reprehenderit</h4>
+                            <div class="featured_events_p">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="our_team">
+        <div class="button_arrow">
+            <a href="#home" class="go_to_home"><img src="imgs/Our_Team/arrow.png" alt=""></a>
+        </div>
+        <div class="our_team" id="our_team">
             <h2 class="our_team_h2">Our Team</h2>
             <div class="our_team_block">
                 <figure class="our_team_figure"> <img src="imgs/Our_Team/t1.png" alt="">
@@ -238,7 +295,7 @@
                 <input class="subscribe_email_field" type="email" name="" id="" placeholder="Email">
                 <input class="subscribe_submit" type="submit" value="Subscribe"> </form>
         </div>
-        <div class="contact_us">
+        <div class="contact_us" id="contact_us">
             <h2 class="contact_us_h2">Contact Us</h2>
             <div class="contact_us_block">
                 <div class="contact_us_info">
@@ -257,6 +314,9 @@
             </div>
             <div class="route_map">
                 <h2 class="route_map_h2">Route Map</h2><img class="route_map_img" src="imgs/Contact_Us/map.png" alt=""></div>
+        </div>
+        <div class="button_arrow">
+            <a href="#home" class="go_to_home"><img src="imgs/Our_Team/arrow.png" alt=""></a>
         </div>
         <footer class="footer">
             <p class="footer_p">© 2017 Историческе Игры. Все права защищены</p>

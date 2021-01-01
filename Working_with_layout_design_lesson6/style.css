@@ -12,6 +12,7 @@
     height: 712px;
     background: url(imgs/first_screen/first_screen_bg.png) no-repeat;
     padding-top: 13px;
+    font-family: "Roboto Condensed";
 }
 
 .header {
@@ -24,19 +25,17 @@
 .logo_section {
     margin-left: 475px;
     float: left;
-    text-decoration: none;
-    margin-top: 19px;
     width: 172px;
-    height: 46px;
+    text-align: left;
 }
 
 .logo_link {
     text-decoration: none;
-    text-align: center;
+    width: 172px;
 }
 
 .logo {
-    padding: none;
+    font-family: Poppins;
 }
 
 .logo_h {
@@ -45,7 +44,9 @@
     font-weight: 500;
     font-style: normal;
     letter-spacing: normal;
-    text-align: left;
+    height: 29px;
+    padding-top: 9px;
+    padding-bottom: 10px;
 }
 
 .logo_g {
@@ -53,9 +54,11 @@
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
-    letter-spacing: normal;
-    text-align: left;
+    letter-spacing: 29px;
     text-transform: uppercase;
+    height: 12px;
+    text-align: right;
+    padding-left: 1px;
 }
 
 .tel {
@@ -160,10 +163,12 @@
     text-decoration: none;
 }
 
-.menu-link-active {
+.menu-link:active,
+.menu-link:hover {
     color: #ffffff;
     font-style: normal;
     letter-spacing: 0.36px;
+    padding-bottom: 25px;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -182,6 +187,7 @@
 }
 
 .first_screen_h2 {
+    font-family: Poppins;
     color: #ffffff;
     font-size: 60px;
     font-weight: 500;
@@ -219,9 +225,11 @@
     margin-top: 81px;
     margin-bottom: 81px;
     height: 338px;
+    font-family: "Roboto Condensed";
 }
 
 .about_us h2 {
+    font-family: Poppins;
     color: #f44336;
     font-size: 36px;
     font-weight: 500;
@@ -250,6 +258,7 @@
     height: 670px;
     background-color: #f7f7f7;
     padding-top: 92px;
+    font-family: Poppins;
 }
 
 .services_h2,
@@ -263,15 +272,85 @@
     margin-bottom: 87px;
 }
 
+.services_menu_block {
+    margin-left: 466px;
+    height: 448px;
+}
+
+.services_menu {
+    width: 452px;
+    height: 448px;
+    float: left;
+    margin-right: 90px;
+}
+
+.services_menu li:hover h3,
+.services_menu li:hover .img_block {
+    color: #f44336;
+}
+
+.services_menu li:hover .img_block {
+    background-color: #f44336;
+}
+
 .services_menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 452px;
+}
+
+.services_menu_info_item {
+    margin-bottom: 73px;
+}
+
+.services_menu_left .services_menu_info_item {
+    text-align: right;
+    float: left;
+    margin-right: 62px;
+}
+
+.img_block_left {
+    float: left;
+}
+
+.services_menu_left {
+    margin-right: 92px;
+}
+
+.services_menu_info_item {
+    width: 282px;
+    height: 87px;
+}
+
+.services_menu_right {
+    text-align: left;
+    float: left;
+}
+
+.img_block_right {
+    float: left;
+}
+
+.services_menu_right .services_menu_info_item {
+    float: left;
+    margin-left: 62px;
+}
+
+.services_menu_right {
+    float: left;
+}
+
+.services_menu_h3 {
     color: #000000;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
     letter-spacing: normal;
+    margin-bottom: 13px;
 }
 
-.services_menu p {
+.services_menu_p {
+    font-family: "Roboto Condensed";
     color: #999999;
     font-size: 12px;
     font-weight: 400;
@@ -279,20 +358,19 @@
     letter-spacing: normal;
 }
 
-.services_menu_left {
-    text-align: right;
-    display: inline-block;
-    margin-left: 464px;
-    width: 280px;
-    padding-right: 214px;
-    list-style-position: inherit;
+.services_menu_left:nth-child(1) .img_block,
+.services_menu_left:nth-child(2) .img_block {
+    padding-top: 37px;
 }
 
-.services_menu_right {
-    text-align: left;
-    display: inline-block;
-    width: 280px;
-    padding-left: 214px;
+.img_block {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #acacac;
+    background-color: #e1e1e1;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .our_gallery {
@@ -300,6 +378,7 @@
     text-align: center;
     padding-top: 92px;
     background-color: #ffffff;
+    font-family: Poppins;
 }
 
 .gallery {
@@ -326,7 +405,7 @@
 }
 
 .gallery_first_p {
-    padding-top: 20px;
+    padding-top: 10px;
     font-style: normal;
     letter-spacing: 0.14px;
     text-transform: uppercase;
@@ -359,6 +438,7 @@
     height: 537px;
     position: relative;
     background-color: rgba(102, 102, 102, 0.81);
+    font-family: "Roboto Condensed";
 }
 
 .testimonial_h2 {
@@ -368,8 +448,9 @@
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    padding-top: 85px;
-    padding-bottom: 90px;
+    padding-top: 65px;
+    padding-bottom: 70px;
+    font-family: Poppins;
 }
 
 .testimonial_img {
@@ -398,6 +479,10 @@
 .testimonial_p {
     font-size: 14px;
     font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    line-height: 2;
 }
 
 .testimonial p.testimonial_by_line {
@@ -406,14 +491,15 @@
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
-    position: absolute;
     bottom: 98px;
     left: 45%;
+    line-height: 6;
 }
 
 .testimonial_button {
-    width: 37px;
-    height: 37px;
+    font-family: "Font Awesome";
+    width: 36px;
+    height: 36px;
     background: none;
     color: #ffffff;
     font-size: 30px;
@@ -423,6 +509,8 @@
     text-align: center;
     float: left;
     margin-top: 9px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
 }
 
 .testimonial_button_previous {
@@ -438,9 +526,11 @@
 .news_and_events {
     height: 704px;
     padding: 92px;
+    font-family: "Roboto Condensed";
 }
 
 .news_and_events_h2 {
+    font-family: Poppins;
     color: #f44336;
     font-size: 36px;
     font-weight: 500;
@@ -480,17 +570,18 @@
 }
 
 .ln_calendar_list_date {
+    font-family: Poppins;
     border-radius: 49px;
     border: 1px solid #e8e8e8;
     background-color: #f7f7f7;
     width: 98px;
-    height: 107px;
-    display: block;
+    height: 117px;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 22px;
     display: inline-block;
     margin-right: 66px;
     margin-left: 21px;
+    float: left;
 }
 
 .date_day {
@@ -510,6 +601,7 @@
 }
 
 .date_year {
+    font-family: "Poppins - Medium Italic";
     color: #9e9e9e;
     font-size: 13px;
     font-weight: 400;
@@ -543,13 +635,13 @@
 }
 
 .featured_events_block {
-    width: 570px;
+    width: 572px;
     height: 540px;
     display: inline-block;
 }
 
 .header_featured_events {
-    width: 570px;
+    width: 572px;
     height: 27px;
     border-bottom: 1px solid #c5c5c5;
     padding-bottom: 15px;
@@ -557,6 +649,7 @@
 }
 
 .featured_events_h2 {
+    font-family: Poppins;
     color: #000000;
     font-size: 24px;
     font-weight: 500;
@@ -567,6 +660,7 @@
 }
 
 .fe_pagination {
+    font-family: Poppins;
     width: 50px;
     margin-left: 300px;
     margin-right: 0;
@@ -582,23 +676,95 @@
     letter-spacing: normal;
     text-align: left;
     text-decoration: none;
-    background: none;
-    border: none;
+}
+
+.featured_events_imgs img {
+    margin-right: 1px;
+    margin-bottom: 34px;
+}
+
+.featured_events_list {
+    list-style-type: none;
+}
+
+.featured_events_list li {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.featured_events_list h4 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding-top: 13px;
+    height: 27px;
+}
+
+.featured_events_list h4:before {
+    content: "+";
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.featured_events_p {
+    width: 570px;
+    background-color: #f5f5f5;
+    padding-left: -14px;
+}
+
+.featured_events_info p {
+    overflow: hidden;
+    height: 0px;
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    width: 534px;
+    padding-left: 14px;
+}
+
+
+/*
+.featured_events_info:active h4:before {
+    content: "-";
+}
+
+.featured_events_info:active p {
+    height: 104px;
+    padding-top: 39px;
+}*/
+
+.featured_events_info:hover h4:before {
+    content: "-";
+}
+
+.featured_events_info:hover p {
+    height: 104px;
+    padding-top: 39px;
 }
 
 .our_team {
     background-color: #f7f7f7;
     height: 785px;
+    font-family: Poppins;
 }
 
 .our_team_h2 {
     color: #f44336;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    padding-top: 98px;
+    padding-top: 88px;
     padding-bottom: 61px;
 }
 
@@ -620,10 +786,11 @@
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
-    padding-top: 26px;
+    padding-top: 16px;
 }
 
 .our_team_position {
+    font-family: "Roboto Condensed";
     color: #838383;
     font-size: 16px;
     font-weight: 300;
@@ -654,16 +821,18 @@
 .subscribe_with_us {
     background: url(imgs/Subscribe_with_Us/Subscribe_with_Us.png) no-repeat;
     height: 313px;
+    font-family: "Roboto Condensed";
 }
 
 .subscribe_with_us_h2 {
+    font-family: Poppins;
     color: #ffffff;
     font-size: 48px;
     font-weight: 500;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    padding-top: 86px;
+    padding-top: 76px;
     padding-bottom: 53px;
 }
 
@@ -702,16 +871,18 @@
 .contact_us {
     height: 1111px;
     text-align: center;
+    font-family: "Roboto Condensed";
 }
 
 .contact_us_h2 {
+    font-family: Poppins;
     color: #f44336;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    padding-top: 97px;
+    padding-top: 87px;
     padding-bottom: 89px;
 }
 
@@ -793,13 +964,14 @@
 }
 
 .route_map_h2 {
+    font-family: Poppins;
     color: #f44336;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    padding-top: 85px;
+    padding-top: 75px;
     padding-bottom: 25px;
 }
 
@@ -807,7 +979,18 @@
     padding-bottom: 90px;
 }
 
+.button_arrow {
+    position: relative;
+}
+
+.go_to_home {
+    position: absolute;
+    right: 55px;
+    margin-top: -15px;
+}
+
 .footer {
+    font-family: "Arial Narrow";
     background-color: #000000;
     height: 71px;
     text-align: center;
