@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="css/style_index.css"> </head>
 
 <body>
     <div class="container">
@@ -31,13 +31,13 @@
             </header>
             <nav class="menu">
                 <ul>
-                    <li class="menu-list"><a href="#home" class="menu-link menu-link-active">Home</a></li>
+                    <li class="menu-list"><a href="#home" class="menu-link menu_link_active">Home</a></li>
                     <li class="menu-list"><a href="#about_us" class="menu-link">About</a></li>
                     <li class="menu-list"><a href="#about_us" class="menu-link">Services</a></li>
-                    <li class="menu-list"><a href="#our_gallery" class="menu-link">Gallery</a></li>
+                    <li class="menu-list"><a href="our_gallery.html" class="menu-link">Gallery</a></li>
                     <li class="menu-list"><a href="#news_and_events" class="menu-link">News</a></li>
                     <li class="menu-list"><a href="#our_team" class="menu-link">Team</a></li>
-                    <li class="menu-list"><a href="#contact_us" class="menu-link">Contact Us</a></li>
+                    <li class="menu-list"><a href="contact_us.html" class="menu-link">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="first_screen_text">
@@ -109,7 +109,8 @@
         <div class="our_gallery" id="our_gallery">
             <h2 class="gallery_h2">Our Gallery</h2>
             <section class="gallery">
-                <figure class="gallery_figure"><img src="imgs/Our_Gallery/Assasins_Creed_Rogue.png" alt="">
+                <figure class="gallery_figure">
+                    <a href="catalog/Assasins_Creed_Rogue.html" class="Assasins_Creed_Rogue"><img src="imgs/Our_Gallery/Assasins_Creed_Rogue.png" alt=""></a>
                     <figcaption class="gallery_figcaption">
                         <p class="gallery_first_p">Assasin’s Creed:</p>
                         <p class="gallery_second_p">Rogue</p>
@@ -313,7 +314,9 @@
                     <input type="submit" class="contact_us_form_item contact_us_submit_button" value="SUBMIT"> </form>
             </div>
             <div class="route_map">
-                <h2 class="route_map_h2">Route Map</h2><img class="route_map_img" src="imgs/Contact_Us/map.png" alt=""></div>
+                <h2 class="route_map_h2">Route Map</h2>
+                <iframe class="route_map_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.891019389823!2d37.53702700957751!3d55.796908838095376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549c0af2d5e3f%3A0xa77899d557548e3a!2sMail.Ru%20Group!5e0!3m2!1sru!2sru!4v1609531901684!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
         <div class="button_arrow">
             <a href="#home" class="go_to_home"><img src="imgs/Our_Team/arrow.png" alt=""></a>
